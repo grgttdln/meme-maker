@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+
+.meme--form {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+input {
+    font-family: 'Arimo', sans-serif;
+    width: 330px;
+    height: 35px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border: 2px solid #c9c9c9;
+    border-radius: 5px;
+    text-indent: 8px;
+}
+
+.meme--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+button {
+    font-family: 'Arimo', sans-serif;
+    cursor: pointer;
+    width: 693px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(135deg, #711F8D 0%, #A818DA 100%);
+    color: white;
+}
+
+.meme--image-container {
+    display: relative;
+    justify-content: center;
+    height: auto;
+    min-width: 500px;
+}
+
+.meme--image {
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: auto;
+    width: auto;
+    max-width: 350px;
+    max-height: 500px;
+}
+
+.meme--text {
+    position: relative;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: -1.8rem 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.top {
+    position: relative;
+    top: 4rem;
+    max-width: 250px;
+}
+
+.bottom {
+    position: relative;
+    bottom: 3rem;
+    max-width: 250px;
+}

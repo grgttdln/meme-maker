@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+
+.footer--footer {
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+}
+
+.footer--txt {
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #2B3035;
+}
+
+.footer--spacing {
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
