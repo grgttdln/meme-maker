@@ -3,7 +3,7 @@ import './Meme.css'
 
 export default function Meme() {
 
-    const [allMemeImages, setAllMemeImages] = React.useState({})
+    const [allMemeImages, setAllMemeImages] = React.useState([])
     
     React.useEffect(function() {
         fetch("https://api.imgflip.com/get_memes")
@@ -49,7 +49,13 @@ export default function Meme() {
                         placeholder="Top Text"
 
                         name="topText"
-                        value={memeImage.topText}
+                        value={
+                                memeImage.topText.length <= 18
+                                ?
+                                    memeImage.topText
+                                :
+                                    ''
+                              }
                         onChange={handleMemeChange}
                     />
                     <input
@@ -57,7 +63,13 @@ export default function Meme() {
                         placeholder="Bottom Text"
 
                         name="bottomText"
-                        value={memeImage.bottomText}
+                        value={
+                            memeImage.bottomText.length <= 18
+                            ?
+                                memeImage.bottomText
+                            :
+                                ''
+                              }
                         onChange={handleMemeChange}
                     />
                 </div>
@@ -76,4 +88,3 @@ export default function Meme() {
     </>
     )
 }
-
